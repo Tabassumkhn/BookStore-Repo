@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Cart</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: maroon;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+         max-width: 900px;
+        margin: auto;
+        padding: 30px;
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+            
+        }
+
+        .cart {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        #buy-now-button {
+            background-color: maroon;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style for book images */
+        .book-image {
+            max-width: 100px;
+        max-height: 1880px;
+        margin-right: 90px;
+}
+#buy-now-button a{
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Book Cart</h1>
+    </header>
+    <div class="container">
+        <div class="cart" id="cart">
+            <!-- Cart will be dynamically populated here -->
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+            </ul>
+        </div>
+        <div>
+            <!-- Message to fill out information and Buy Now button -->
+            <p>Fill out your information to complete the purchase:</p>
+            <button id="buy-now-button"><a href="userloginpage.html">Buy Now</button></a>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code to add books to the cart
+        const cart = document.getElementById('cart');
+        const cartItems = document.getElementById('cart-items');
+        const buyNowButton = document.getElementById('buy-now-button');
+
+        // Function to add a book to the cart
+        function addToCart(bookTitle, author, price, imageUrl) {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `
+                <img class="book-image" src="${imageUrl}" alt="${bookTitle}">
+                Title: ${bookTitle}, Author: ${author}, Price: ${price}
+            `;
+            cartItems.appendChild(listItem);
+        }
+
+        // Example: Add a book to the cart (you can call this function when a book is added)
+        addToCart('The hobbit', 'J.R.R Tolkien ', 99 , 'b4.jpg');
+
+        // Event listener for the Buy Now button
+        buyNowButton.addEventListener('click', () => {
+            // Handle the Buy Now action here (e.g., redirect to a checkout page or process the purchase)
+            alert('Buy Now button clicked. Handle the purchase here.');
+        });
+    </script>
+</body>
+</html>
