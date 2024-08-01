@@ -8,7 +8,7 @@ $pincode = $_POST['pincode'];
 //$contact = $_POST['contact'];
 //database connection
 $conn = new mysqli('localhost','root','','project');
-if ($conn->connect_error) {
+if ($conn->connect_error) { 
     die('connection failed : '.$conn->connect_error);
 }else{
     $stmt = $conn->prepare("insert into perchaseinfo(firstname, lastname, address, contact, pincode) values(?, ?, ?, ?, ?)");

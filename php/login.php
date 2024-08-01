@@ -6,7 +6,7 @@ $password = $_POST['password'];
 $conn = new mysqli("localhost","root","","project");
 if ($conn->connect_error) {
     die("failed to connect:". $conn->connect_error);
-}else{
+}else{ 
     $stmt= $conn->prepare("select * from login where username = ?");
     $stmt->bind_param("s", $username);
     $stmt->execute();

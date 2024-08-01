@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $database = "bookselling";
     $conn = mysqli_connect($host, $username, $password, $database);
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    }
+    } 
 }
 ?>   
  <!DOCTYPE html>

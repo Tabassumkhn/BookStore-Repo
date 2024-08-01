@@ -4,7 +4,7 @@ $lname = $_POST['lname'];
 $email = $_POST['email'];
 $password = $_POST['password'];
 $gender = $_POST['gender'];
-$contact = $_POST['contact'];
+$contact = $_POST['contact']; 
 //database connection
 $conn = new mysqli('localhost','root','','project');
 if ($conn->connect_error) {

@@ -1,87 +1,95 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Login</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: url('4.jpg') no-repeat center center fixed;
-            background-size: cover;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background: url("4.jpg") no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
 
+      .container {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 50px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+        width: 350px;
+      }
 
-        .container {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 50px;
-            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-            width: 350px;
-        }
+      h2 {
+        text-align: center;
+        color: maroon;
+      }
 
-        h2 {
-            text-align: center;
-            color: maroon;
-        }
+      .form-group {
+        margin-bottom: 10px;
+        width: 90%;
+      }
 
-        .form-group {
-            margin-bottom: 10px;
-            width: 90%;
-        }
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
 
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
+      .form-group input {
+        width: 100%;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
 
-        .form-group input {
-            width: 100%;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
+      .btn-container {
+        text-align: center;
+      }
 
-        .btn-container {
-            text-align: center;
-        }
-
-        .btn {
-            background-color: maroon;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
+      .btn {
+        background-color: maroon;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <h2>Admin Login</h2>
-        <form action="adminloginnn.php" method="post">
-            <div class="form-group">
-                <label for="username">Admin_name:</label>
-                <input type="text" id="admin_name" placeholder="admin_name" name="admin_name" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" placeholder="password" name="password" required>
-            </div>
-            <div class="btn-container mt-5">
-                <button type="submit" class="btn btn-lg btn-danger">Login</button>
-            </div>
-        </form>
+      <h2>Admin Login</h2>
+      <form action="adminloginnn.php" method="post">
+        <div class="form-group">
+          <label for="username">Admin_name:</label>
+          <input
+            type="text"
+            id="admin_name"
+            placeholder="admin_name"
+            name="admin_name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="password"
+            name="password"
+            required
+          />
+        </div>
+        <div class="btn-container mt-5">
+          <button type="submit" class="btn btn-lg btn-danger">Login</button>
+        </div>
+      </form>
     </div>
-</body>
-
+  </body>
 </html>

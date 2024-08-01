@@ -7,7 +7,7 @@ if (strlen($cardnumber) != 16 || strlen($cvv) != 3) {
 } else
 {
     $conn = new mysqli('localhost','root','','project');
-if ($conn->connect_error) {
+if ($conn->connect_error) { 
     die('connection failed : '.$conn->connect_error);
 }else{
     $stmt = $conn->prepare("insert into debitcard(cardholder, cardnumber, cvv) values(?,?,?)");

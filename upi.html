@@ -1,73 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UPI Payment</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        .container {
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #ffffff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            text-align: center;
-            color: #8B0000; /* Maroon color */
-        }
-        .payment-details {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 20px;
-            color: #333;
-        }
-        .qr-code {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .instructions {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 16px;
-            color: #666;
-        }
-        .icon {
-            color: #8B0000; /* Maroon color */
-            font-size: 24px;
-            margin-right: 10px;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+        color: #8b0000; /* Maroon color */
+      }
+      .payment-details {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 20px;
+        color: #333;
+      }
+      .qr-code {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .instructions {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 16px;
+        color: #666;
+      }
+      .icon {
+        color: #8b0000; /* Maroon color */
+        font-size: 24px;
+        margin-right: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h2><i class="fas fa-mobile-alt icon"></i> UPI Payment</h2>
-        <div class="payment-details">
-            <p><i class="fas fa-info-circle icon"></i> Scan the QR code or use the UPI ID below to make the payment:</p>
-            <p><i class="fas fa-id-card icon"></i> UPI ID: example@upi</p>
-        </div>
-        <!-- Example QR Code -->
-        <img src="https://api.qrserver.com/v1/create-qr-code/?data=payment+successful&size=200x200" alt="UPI QR Code" class="qr-code">
-        <!-- Example QR Code -->
+      <h2><i class="fas fa-mobile-alt icon"></i> UPI Payment</h2>
+      <div class="payment-details">
+        <p>
+          <i class="fas fa-info-circle icon"></i> Scan the QR code or use the
+          UPI ID below to make the payment:
+        </p>
+        <p><i class="fas fa-id-card icon"></i> UPI ID: example@upi</p>
+      </div>
+      <!-- Example QR Code -->
+      <img
+        src="https://api.qrserver.com/v1/create-qr-code/?data=payment+successful&size=200x200"
+        alt="UPI QR Code"
+        class="qr-code"
+      />
+      <!-- Example QR Code -->
 
-        <div class="instructions">
-            <p><i class="fas fa-check-circle icon"></i> Open your UPI payment app</p>
-            <p><i class="fas fa-check-circle icon"></i> Scan the QR code or enter the UPI ID</p>
-            <p><i class="fas fa-check-circle icon"></i> Enter the amount and complete the payment</p>
-        </div>
+      <div class="instructions">
+        <p>
+          <i class="fas fa-check-circle icon"></i> Open your UPI payment app
+        </p>
+        <p>
+          <i class="fas fa-check-circle icon"></i> Scan the QR code or enter the
+          UPI ID
+        </p>
+        <p>
+          <i class="fas fa-check-circle icon"></i> Enter the amount and complete
+          the payment
+        </p>
+      </div>
     </div>
-</body>
+  </body>
 </html>
